@@ -5,18 +5,18 @@ Visual Studio Code.
 
 Here are the currently supported features provided by the extension:
 
--   Execute all basic version control actions such as add, delete, rename, move,
-    etc.
--   View local changes and history for your files
--   Include and Exclude changes (and move files between the two states)
--   Merge conflicts from updates
--   Check-in and update local files
--   Integrated TFVC Output window
--   Support for a TFS proxy
--   Associate work items to check-ins _(TEE CLC only)_
--   Support for **Local** workspaces created with either Visual Studio, the
-    JetBrains IDEs or Eclipse
-    ([details](#what-is-the-difference-between-a-local-and-server-workspace-how-can-i-tell-which-one-im-working-with))
+- Execute all basic version control actions such as add, delete, rename, move,
+  etc.
+- View local changes and history for your files
+- Include and Exclude changes (and move files between the two states)
+- Merge conflicts from updates
+- Check-in and update local files
+- Integrated TFVC Output window
+- Support for a TFS proxy
+- Associate work items to check-ins _(TEE CLC only)_
+- Support for **Local** workspaces created with either Visual Studio, the
+  JetBrains IDEs or Eclipse
+  ([details](#what-is-the-difference-between-a-local-and-server-workspace-how-can-i-tell-which-one-im-working-with))
 
 ![Team Foundation Version Control Viewlet](assets/tfvc-viewlet.png)
 
@@ -25,39 +25,39 @@ Here are the currently supported features provided by the extension:
 Below is a short list of steps to get up-and-running with TFVC support. Be sure
 to check out the other TFVC documentation on this page.
 
--   [Install the Azure Repos extension](#the-visual-studio-code-extension) for
-    Visual Studio Code.
--   For Azure DevOps Services, ensure you have a Personal Access Token (PAT)
-    with All Scopes available. Team Foundation Server requires your domain
-    credentials. [More info...](#authentication)
--   Ensure you have a
-    [TF command line client installed](#tfvc-command-line-client) (either TF.exe
-    or the TEE CLC).
--   Set the [`tfvc.location`](#configure-tfvc-support) VS Code setting to the
-    full path of your TF command line client.
--   Open a folder containing a _Local_ TFVC Workspace and sign in when prompted.
-    [More info...](#open-a-local-tfvc-repository-folder)
--   Set the SCM Provider to `TFVC`.
-    [Read how...](HTTPS://code.visualstudio.com/updates/v1_13#_install-additional-scm-providers)
+- [Install the Azure Repos extension](#the-visual-studio-code-extension) for
+  Visual Studio Code.
+- For Azure DevOps Services, ensure you have a Personal Access Token (PAT) with
+  All Scopes available. Team Foundation Server requires your domain credentials.
+  [More info...](#authentication)
+- Ensure you have a
+  [TF command line client installed](#tfvc-command-line-client) (either TF.exe
+  or the TEE CLC).
+- Set the [`tfvc.location`](#configure-tfvc-support) VS Code setting to the full
+  path of your TF command line client.
+- Open a folder containing a _Local_ TFVC Workspace and sign in when prompted.
+  [More info...](#open-a-local-tfvc-repository-folder)
+- Set the SCM Provider to `TFVC`.
+  [Read how...](HTTPS://code.visualstudio.com/updates/v1_13#_install-additional-scm-providers)
 
 ## Getting Started Videos
 
 Below are a few videos to help get you started using TFVC quickly.
 
--   [TFVC Source Code Control for Visual Studio Code](HTTPS://youtu.be/6IzJ2UPGmoQ) -
-    This video shows you how to set up the TFVC support on Windows and
-    demonstrates much of the functionality available for Team Foundation Version
-    Control. The features shown in this video apply equally well to the TFVC
-    support on macOS and Linux.
--   [Set up and Configure the TEE CLC on Linux (and macOS)](HTTPS://youtu.be/VPNaEIVZfr0) -
-    This video demonstrates how to set up the Team Explorer Everywhere Command
-    Line Client (TEE CLC) on Ubuntu. On macOS and Linux, the CLC provides the
-    TFVC capability to the extension.
--   [Set up the Azure Repos extension for Visual Studio Code](HTTPS://youtu.be/t6gGfj8WOgg) -
-    If you haven't used the extension before, this video will show you how to
-    set it up, create a personal access token and get up and running.
--   [Walkthrough of the Azure Repos extension for Visual Studio Code](HTTPS://youtu.be/sk6LrzQX4P8) -
-    This is a walkthrough of most of the features of the Azure Repos extension.
+- [TFVC Source Code Control for Visual Studio Code](HTTPS://youtu.be/6IzJ2UPGmoQ) -
+  This video shows you how to set up the TFVC support on Windows and
+  demonstrates much of the functionality available for Team Foundation Version
+  Control. The features shown in this video apply equally well to the TFVC
+  support on macOS and Linux.
+- [Set up and Configure the TEE CLC on Linux (and macOS)](HTTPS://youtu.be/VPNaEIVZfr0) -
+  This video demonstrates how to set up the Team Explorer Everywhere Command
+  Line Client (TEE CLC) on Ubuntu. On macOS and Linux, the CLC provides the TFVC
+  capability to the extension.
+- [Set up the Azure Repos extension for Visual Studio Code](HTTPS://youtu.be/t6gGfj8WOgg) -
+  If you haven't used the extension before, this video will show you how to set
+  it up, create a personal access token and get up and running.
+- [Walkthrough of the Azure Repos extension for Visual Studio Code](HTTPS://youtu.be/sk6LrzQX4P8) -
+  This is a walkthrough of most of the features of the Azure Repos extension.
 
 ## Prerequisites
 
@@ -138,17 +138,17 @@ your Azure DevOps Services organization. To create the token, go
 [here](HTTPS://aka.ms/gtgzt4) to read how. You can also
 [view our video](HTTPS://youtu.be/t6gGfj8WOgg) on how to do the same.
 
--   TFVC repositories require tokens with _All Scopes_. Anything less will cause
-    the extension to fail.
+- TFVC repositories require tokens with _All Scopes_. Anything less will cause
+  the extension to fail.
 
 In addition to connecting to Azure DevOps Services using a personal access token
 (PAT), the TF.exe command line client needs its own access to the remote
 repository, otherwise TFVC will fail:
 
--   Open a command prompt with the correct version of TF.exe in its PATH
--   Enter "tf workspace"
--   If this opens a login prompt, enter your credentials
--   You can then close the Workspace window
+- Open a command prompt with the correct version of TF.exe in its PATH
+- Enter "tf workspace"
+- If this opens a login prompt, enter your credentials
+- You can then close the Workspace window
 
 ### Team Foundation Server
 
@@ -227,11 +227,11 @@ to allow additional functionality like Undo, Include and Exclude.
 
 ![TFVC Check In Refresh](assets/tfvc-checkin-refresh.png)
 
--   `Check In` – This `check mark` button is used to check in your changes. You
-    will not be prompted for a comment so make sure you provide one before
-    clicking.
--   `Refresh` – This `circular arrow` button runs the TFVC `Status` command and
-    processes the results.
+- `Check In` – This `check mark` button is used to check in your changes. You
+  will not be prompted for a comment so make sure you provide one before
+  clicking.
+- `Refresh` – This `circular arrow` button runs the TFVC `Status` command and
+  processes the results.
 
 #### The '...' Menu
 
@@ -240,20 +240,20 @@ provider.
 
 ![TFVC ... Menu](assets/tfvc-more-menu.png)
 
--   `Sync` – This option runs the `Get` command and handles any conflicts or
-    errors.
--   `Associate Work Items` – In order to associate work items to your check-in,
-    select this option. The list of work items assigned to you (or returned from
-    your custom query) will be displayed for you to choose. Choosing one adds it
-    to your check-in comment.
--   `Check In` – Use this option to check in your changes.
--   `Undo All` - If there are file modifications, this command will prompt for
-    confirmation and then undo all of the changes.
--   `Show TFVC Output` – Use this option to display the `TFVC Output` window
-    which shows the TFVC commands run during this session.
--   `Switch SCM Provider... >` – This option is provided by VS Code and allows
-    you to change between the available source control providers (e.g, Git,
-    TFVC, etc.).
+- `Sync` – This option runs the `Get` command and handles any conflicts or
+  errors.
+- `Associate Work Items` – In order to associate work items to your check-in,
+  select this option. The list of work items assigned to you (or returned from
+  your custom query) will be displayed for you to choose. Choosing one adds it
+  to your check-in comment.
+- `Check In` – Use this option to check in your changes.
+- `Undo All` - If there are file modifications, this command will prompt for
+  confirmation and then undo all of the changes.
+- `Show TFVC Output` – Use this option to display the `TFVC Output` window which
+  shows the TFVC commands run during this session.
+- `Switch SCM Provider... >` – This option is provided by VS Code and allows you
+  to change between the available source control providers (e.g, Git, TFVC,
+  etc.).
 
 #### Resolving Conflicts
 
@@ -262,12 +262,12 @@ are inline icons which also provide this functionality.
 
 ![TFVC Resolve Conflicts](assets/tfvc-resolve-conflicts.png)
 
--   `Open Diff` – Opens the diff view between the modified file and the
-    versioned file.
--   `Open File` – Opens the modified file in the editor.
--   `Resolve: Take Theirs` – Resolves the conflict as `Take Theirs`.
--   `Resolve: Keep Yours` – Resolves the conflict as `Keep Yours`.
--   `Undo` – Reverts the changes made to the file.
+- `Open Diff` – Opens the diff view between the modified file and the versioned
+  file.
+- `Open File` – Opens the modified file in the editor.
+- `Resolve: Take Theirs` – Resolves the conflict as `Take Theirs`.
+- `Resolve: Keep Yours` – Resolves the conflict as `Keep Yours`.
+- `Undo` – Reverts the changes made to the file.
 
 **_Note:_** Resolving conflicts between branches is not supported in the
 extension. At this time, these conflicts are best addressed in an IDE or at the
@@ -280,14 +280,14 @@ menu.
 
 ![TFVC Rename](assets/tfvc-rename.png)
 
--   `Delete (TFVC)` – To properly delete a file in TFVC using the `Delete`
-    command, use this option on Visual Studio Code's File Explorer. Since
-    1.119.0, the extension will no longer automatically promote candidate
-    deletions to a TFVC delete.
+- `Delete (TFVC)` – To properly delete a file in TFVC using the `Delete`
+  command, use this option on Visual Studio Code's File Explorer. Since 1.119.0,
+  the extension will no longer automatically promote candidate deletions to a
+  TFVC delete.
 
--   `Rename (TFVC)` – To properly rename a file in TFVC using the `Rename`
-    command (instead of `Delete` and `Add`), use this option on Visual Studio
-    Code's File Explorer. You will prompted for a new file name.
+- `Rename (TFVC)` – To properly rename a file in TFVC using the `Rename` command
+  (instead of `Delete` and `Add`), use this option on Visual Studio Code's File
+  Explorer. You will prompted for a new file name.
 
 ## Additional Information
 
@@ -353,25 +353,25 @@ support.
 While the TEE CLC is primarily for macOS and Linux users it can also be used on
 Windows. In order to use the CLC on Windows, you need to do the following:
 
--   Download and install a version of
-    [Java 8 for Windows](HTTP://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html).
-    -   Make sure to install the version (i.e., x86 or x64) that matches your
-        processor architecture
--   Ensure the path to `java.exe` is a part of your `PATH` environment variable.
-    -   Check that you can successully run `java -version`
--   Download and unzip the
-    [latest version](HTTPS://github.com/Microsoft/team-explorer-everywhere/releases)
-    of the TEE CLC to a local folder of your choice.
-    -   The file you need to download is of the format `TEE-CLC-14.114.0.zip`
--   Open a command prompt and run `{path-to-tf.cmd} eula` and accept the End
-    User License Agreement.
--   From within Visual Studio Code, update your `tfvc.location` setting to the
-    full path to `tf.cmd` (e.g., `C:\TEE-CLC-14.111.1\tf.cmd`).
--   The last thing that you **must** do is run the `tf workspaces` command as
-    detailed
-    [here](#i-have-workspaces-created-with-visual-studio-can-i-use-the-tee-clc-to-work-with-them)
-    so that the CLC is aware of the workspaces in the specified collection.
-    (Each tool, tf.cmd and tf.exe, keeps its own local cache of workspaces.)
+- Download and install a version of
+  [Java 8 for Windows](HTTP://www.oracle.com/technetwork/java/javase/downloads/jre8-downloads-2133155.html).
+    - Make sure to install the version (i.e., x86 or x64) that matches your
+      processor architecture
+- Ensure the path to `java.exe` is a part of your `PATH` environment variable.
+    - Check that you can successully run `java -version`
+- Download and unzip the
+  [latest version](HTTPS://github.com/Microsoft/team-explorer-everywhere/releases)
+  of the TEE CLC to a local folder of your choice.
+    - The file you need to download is of the format `TEE-CLC-14.114.0.zip`
+- Open a command prompt and run `{path-to-tf.cmd} eula` and accept the End User
+  License Agreement.
+- From within Visual Studio Code, update your `tfvc.location` setting to the
+  full path to `tf.cmd` (e.g., `C:\TEE-CLC-14.111.1\tf.cmd`).
+- The last thing that you **must** do is run the `tf workspaces` command as
+  detailed
+  [here](#i-have-workspaces-created-with-visual-studio-can-i-use-the-tee-clc-to-work-with-them)
+  so that the CLC is aware of the workspaces in the specified collection. (Each
+  tool, tf.cmd and tf.exe, keeps its own local cache of workspaces.)
 
 Finally, there's also a [video](HTTPS://youtu.be/VPNaEIVZfr0) that shows how to
 do this on Linux (the same high-level steps apply on Windows).
