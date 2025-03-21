@@ -453,7 +453,7 @@
 		"*"
 	],
 	"dependencies": {
-		"applicationinsights": "3.5.0",
+		"applicationinsights": "3.6.0",
 		"event-stream": "4.0.1",
 		"fs": "0.0.2",
 		"git-repo-info": "2.1.1",
@@ -474,8 +474,8 @@
 	},
 	"devDependencies": {
 		"@types/applicationinsights": "0.20.0",
-		"@types/chai": "5.0.1",
-		"@types/node": "22.13.9",
+		"@types/chai": "5.2.0",
+		"@types/node": "22.13.10",
 		"@types/q": "1.5.8",
 		"@types/uuid": "10.0.0",
 		"@types/winston": "2.4.4",
