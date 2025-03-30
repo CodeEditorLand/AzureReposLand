@@ -1,10 +1,33 @@
 {
 	"name": "team",
 	"displayName": "Azure Repos",
+	"version": "0.0.1",
+	"private": false,
 	"description": "Connect to Azure Repos and work with Git and Team Foundation Version Control (TFVC) repositories. Manage your pull requests, work items, and more.",
+	"keywords": [
+		"codeeditorland",
+		"land",
+		"playform"
+	],
+	"homepage": "HTTPS://GitHub.Com/CodeEditorLand/AzureReposLand#readme",
+	"bugs": {
+		"url": "HTTPS://GitHub.Com/CodeEditorLand/AzureReposLand/issues"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+HTTPS://github.com/CodeEditorLand/AzureReposLand.git"
+	},
+	"license": "SEE LICENSE IN LICENSE",
+	"author": {
+		"name": "Source 🖋️ Open 👐🏻",
+		"email": "Source/Open@Editor.Land",
+		"url": "HTTPS://Editor.Land"
+	},
+	"type": "module",
 	"main": "./out/src/extension",
 	"scripts": {
-		"compile": "tsc -watch -p ./"
+		"compile": "tsc -watch -p ./",
+		"prepublishOnly": "Build 'Source/**/*.ts'"
 	},
 	"contributes": {
 		"commands": [
@@ -473,6 +496,7 @@
 		"xmldoc": "1.3.0"
 	},
 	"devDependencies": {
+		"@playform/build": "0.2.1",
 		"@types/applicationinsights": "0.20.0",
 		"@types/chai": "5.2.1",
 		"@types/node": "22.13.14",
@@ -486,6 +510,9 @@
 		"should": "13.2.3",
 		"vsts-task-lib": "2.7.0",
 		"yargs": "17.7.2"
+	},
+	"publishConfig": {
+		"access": "public"
 	},
 	"icon": "assets/team.png",
 	"galleryBanner": {
