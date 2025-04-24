@@ -476,7 +476,7 @@
 		"*"
 	],
 	"dependencies": {
-		"applicationinsights": "3.6.0",
+		"applicationinsights": "3.7.0",
 		"event-stream": "4.0.1",
 		"fs": "0.0.2",
 		"git-repo-info": "2.1.1",
