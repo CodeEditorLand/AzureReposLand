@@ -25,6 +25,7 @@
 		"test-integration/**/*",
 		"src",
 		"src",
+		"src",
 		"src"
 	]
 }
