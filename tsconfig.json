@@ -1,31 +1,24 @@
 {
-	"compilerOptions": {
-		"allowJs": true,
-		"baseUrl": "./",
-		"forceConsistentCasingInFileNames": true,
-		"lib": [
-			"es6"
-		],
-		"module": "commonjs",
-		"noUnusedLocals": true,
-		"noUnusedParameters": true,
-		"outDir": "Target",
-		"removeComments": false,
-		"rootDir": "src",
-		"sourceMap": true,
-		"target": "es6"
-	},
-	"exclude": [
-		"node_modules"
-	],
-	"extends": "@playform/build/tsconfig",
-	"include": [
-		"src/**/*",
-		"test/**/*",
-		"test-integration/**/*",
-		"src",
-		"src",
-		"src",
-		"src"
-	]
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "es6",
+        "outDir": "out",
+        "sourceMap": true,
+        "removeComments": false,
+        "lib": [
+            "es6"
+        ],
+        "allowJs": true,
+        "noUnusedParameters": true,
+        "noUnusedLocals": true,
+        "forceConsistentCasingInFileNames": true
+    },
+    "include": [
+        "src/**/*",
+        "test/**/*",
+        "test-integration/**/*"
+    ],
+    "exclude": [
+        "node_modules"
+    ]
 }
