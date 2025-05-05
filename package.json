@@ -515,7 +515,7 @@
     "event-stream": "^3.3.2",
     "fs": "0.0.2",
     "git-repo-info": "^1.1.2",
-    "gulp": "^3.9.1",
+    "gulp": "^5.0.0",
     "open": "0.0.5",
     "opener": "^1.4.1",
     "parse-git-config": "^0.3.1",
