@@ -488,7 +488,7 @@
     "@types/applicationinsights": "0.20.0",
     "@types/chai": "^5.2.2",
     "@types/mocha": "^10.0.10",
-    "@types/node": "^22.15.30",
+    "@types/node": "^24.0.0",
     "@types/q": "^1.5.8",
     "@types/uuid": "^10.0.0",
     "@types/winston": "2.4.4",
